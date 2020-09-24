@@ -98,7 +98,14 @@
 
 
 //EXCITED KITTEN
-const kittyTalk = ["...human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away..."]
+// const kittyTalk = ["...human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away..."]
 
-for (i = 1; i <= 20; i++)
-    console.log("Love me, pet me! HSSSSSS!");
+// for (i = 1; i <= 20; i++)
+//     console.log("Love me, pet me! HSSSSSS!");
+
+
+//FIND THE MEDIAN
+// const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+
+//console.log(nums.length);
+// function median(nums)
