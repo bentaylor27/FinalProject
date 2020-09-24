@@ -98,11 +98,19 @@
 
 
 //EXCITED KITTEN
-// const kittyTalk = ["...human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away..."]
+const kittyTalk = ["...human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away..."]
 
-// for (i = 1; i <= 20; i++)
-//     console.log("Love me, pet me! HSSSSSS!");
+for (i = 1; i <= 20; i++) {
+   // console.log one of these phrases for every even number
+   //use a math method and console log the string from that position in the array
+   let arrayPosition = Math.floor(Math.random() * kittyTalk.length) //generate a randomized position for the array
+   // console.log(phrase)
+   if (i % 2 == 0) { // check whether i is even 
+      console.log(kittyTalk[arrayPosition]) // return the value at the random position
+   }
+}
 
+//created basic for loop that runs 20 times.
 
 //FIND THE MEDIAN
 // const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
