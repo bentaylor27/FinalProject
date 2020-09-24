@@ -51,7 +51,7 @@
 
 
 //METHODS, REVISITED
-const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+//const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
 
 // let pos = favMovies.indexOf('Titanic')
 //     console.log(pos)
@@ -81,8 +81,20 @@ const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle'
 //console.log(favMovies.length);
     // => 19 objects in the array
 //console.log(favMovies.slice(10));
-let someMovies = favMovies.slice(10);
-    console.log(someMovies);
-    console.log(favMovies);
+// let someMovies = favMovies.slice(10);
+//     console.log(someMovies);
+//     console.log(favMovies);
 //slice did not alter the original array
 
+
+//WHERE IS WALDO
+const whereIsWaldo = [["Timmy", "Frank"], "Eggbert", ["Lucinda", "Jacc", "Neff", "Snoop"], ["Petunia", ["Baked Goods", "Waldo"]]];
+
+// let removed = whereIsWaldo.splice(1, 1)
+//     console.log(whereIsWaldo);
+
+whereIsWaldo[2[2]] = "No One"
+    console.log(whereIsWaldo);
+
+
+//EXCITED KITTEN
