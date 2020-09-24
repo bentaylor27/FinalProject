@@ -88,13 +88,17 @@
 
 
 //WHERE IS WALDO
-const whereIsWaldo = [["Timmy", "Frank"], "Eggbert", ["Lucinda", "Jacc", "Neff", "Snoop"], ["Petunia", ["Baked Goods", "Waldo"]]];
+//const whereIsWaldo = [["Timmy", "Frank"], "Eggbert", ["Lucinda", "Jacc", "Neff", "Snoop"], ["Petunia", ["Baked Goods", "Waldo"]]];
 
 // let removed = whereIsWaldo.splice(1, 1)
 //     console.log(whereIsWaldo);
 
-whereIsWaldo[2[2]] = "No One"
-    console.log(whereIsWaldo);
+// whereIsWaldo[2[2]] = "No One"
+//     console.log(whereIsWaldo);
 
 
 //EXCITED KITTEN
+const kittyTalk = ["...human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away..."]
+
+for (i = 1; i <= 20; i++)
+    console.log("Love me, pet me! HSSSSSS!");
