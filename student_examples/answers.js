@@ -20,11 +20,11 @@
 // }
 
 //WILD WILD LIFE
-const wolfy = ["Wolfy", "wolf", 16, "Yukon Territory"]
-const sharky = ["Sharky", "shark", 20, "Left Coast"]
-const plantee = ["Plantee", "plant",  5000 , "Mordor"]
-const porgee = ["Porgee", "Porg", 186, "Ahch-To"]
-const dart = ["D'Art" , "Demogorgan Dog", 2, "Upside Down"]
+// const wolfy = ["Wolfy", "wolf", 16, "Yukon Territory"]
+// const sharky = ["Sharky", "shark", 20, "Left Coast"]
+// const plantee = ["Plantee", "plant",  5000 , "Mordor"]
+// const porgee = ["Porgee", "Porg", 186, "Ahch-To"]
+// const dart = ["D'Art" , "Demogorgan Dog", 2, "Upside Down"]
 
 // plantee[2] = 50001
 //     console.log(plantee)
@@ -35,5 +35,12 @@ const dart = ["D'Art" , "Demogorgan Dog", 2, "Upside Down"]
 // dart.push("Hawkins")
 //     console.log(dart)
 
-wolfy.splice(0, 1, "Gameboy")
-    console.log(wolfy)
+// wolfy.splice(0, 1, "Gameboy")
+//     console.log(wolfy)
+
+//NINJA TURTLES
+// const ninjaTurtles = ["donatello", "leonardo", "raphael", "michaelangelo"]
+
+// for (const toUpperCase of ninjaTurtles) {
+//     console.log(toUpperCase);
+// }
