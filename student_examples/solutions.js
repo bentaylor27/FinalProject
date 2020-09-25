@@ -35,25 +35,16 @@
 
 
 //PRIME NUMBERS
-// var string="num"
 // function checkPrime(num) {
-//     if (num == 2) {
-//         return true;
-//     }
-//     else if (num > 1) {
-//         for (let i = 2; i < num; i++) {
-//             if (num % i !== 0) {
-//                 return true;
-//             }
-//             else if (num == i * i) {
-//                 return false;
-//             }
-//             else {
-//                 return false;
-//             }
+//     for (let i = 2; i <= num; i++) {
+//         if (num % i == 0) {
+//             return false;
 //         }
 //     }
+//     return true;
 // }
+
+// console.log(checkPrime(8))
 
 // console.log(checkPrime(7))
 
@@ -82,3 +73,43 @@
 
 
 // ROCK PAPER SCISSORS
+const userChoice = prompt("Rock, paper or scissors?");
+const computerChoice = Math.random();
+if (computerChoice <0.34){
+    computerChoice = "rock";
+}else if(computerChoice <=0.67){
+    computerChoice = "paper";
+}
+else{
+    computerChoice = "scissors";
+}
+var compare = function(choice1,choice2){
+    if(choice1===choice2){
+        return "The result is a tie!";
+    }
+    if(choice1==="rock"){
+        if(choice2==="scissors"){
+            return "rock wins";
+        }
+        else{
+            return "paper wins";
+        }
+    }
+    if(choice1==="paper"){
+        if(choice2==="rock"){
+            return "paper wins";
+        }
+        else{
+            return "scissors wins";
+        }
+    }
+    if(choice1==="scissors"){
+        if(choice2==="rock"){
+            return "rock wins";
+        }
+        else{
+            return "scissors wins";
+        }
+    }
+};
+compare(userChoice,computerChoice);
