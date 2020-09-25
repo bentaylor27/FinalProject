@@ -3,35 +3,82 @@
 
 
 //PALINDROME
-var string="Racecar"
-function checkPalindrome(string){
-    string=string.toLowerCase();
-    for (let i=0; i<string.length; i++){
-        if (string[i] == string[string.length-1-i]){
-            console.log("it checks out")
-        }
-        else{
-            return false
-        }
-    } //for loop bracket
-    return true
-}
+// var string="Racecar"
+// function checkPalindrome(string) {
+//     string=string.toLowerCase();
+//     for (let i=0; i<string.length; i++) {
+//         if (string[i] == string[string.length-1-i]) {
+//             console.log("it checks out")
+//         }
+//         else{
+//             return false
+//         }
+//     } //for loop bracket
+//     return true
+// }
 
-console.log(checkPalindrome(string));
+// console.log(checkPalindrome(string));
 
 
 //SUM ARRAY
-var array=[1,2,3,4,5,6]
+// var array=[1,2,3,4,5,6]
 
-function sumArray(array){
-    let sum=0;
-    for (let i=0; i<array.length; i++){
-        sum += array[i]
-    }
-    return sum
-}
+// function sumArray(array) {
+//     let sum=0;
+//     for (let i=0; i<array.length; i++) {
+//         sum += array[i]
+//     }
+//     return sum
+// }
 
-console.log(sumArray(array));
+// console.log(sumArray(array));
 
 
 //PRIME NUMBERS
+// var string="num"
+// function checkPrime(num) {
+//     if (num == 2) {
+//         return true;
+//     }
+//     else if (num > 1) {
+//         for (let i = 2; i < num; i++) {
+//             if (num % i !== 0) {
+//                 return true;
+//             }
+//             else if (num == i * i) {
+//                 return false;
+//             }
+//             else {
+//                 return false;
+//             }
+//         }
+//     }
+// }
+
+// console.log(checkPrime(7))
+
+// var countPrime = 
+// const countPrime(num) {
+//     if(num > 1) {
+//         console.log(num);
+//         countPrime(num + 1);
+//     } else {
+//         return
+//     }
+// }
+
+
+
+
+
+// const countdown = (num) => {
+//     if(num != 0){
+//         console.log(num);
+//         countdown(num - 1 );
+//     } else {
+//         return
+//     }
+// }
+
+
+// ROCK PAPER SCISSORS
