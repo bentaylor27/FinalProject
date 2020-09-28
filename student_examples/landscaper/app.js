@@ -32,6 +32,14 @@ function upgradeTool () {
     if (input == "scissors") {
         total = total - 5
     }
+    if (input == "push lawnmower") {
+        total = total - 25
+    }
+    if (input == "riding lawnmower") {
+        total = total - 100
+    }if (input == "starving students") {
+        total = total - 500
+    }
     tool = input
     document.getElementById("tool").innerHTML = ("Your tool is now this " + tool)
     
