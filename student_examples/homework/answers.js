@@ -21,3 +21,15 @@
 
 
 //TAKE IT EASY
+// const rainbow = ['Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Indigo', 'Violet']
+
+// console.log(rainbow[4])
+
+const ben = {
+    food: 'cheeseburgers',
+    hobby: 'football',
+    town: 'Chicago',
+    datatype: 'Boolean'
+}
+
+console.log(ben.hobby);
