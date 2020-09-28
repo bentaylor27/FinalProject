@@ -59,57 +59,78 @@
 // }
 
 
+//solution from Ben 9/25
+const checkPrime = (num) => {
+    //loop from 2 to the square root of the number
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) {
+            return false
+        }
+    }
+    return true
+}
+
+    //i want to return false if the number is not prime
+    //i want to return true if the number is prime
+
+//console.log(checkPrime(7))
 
 
+const printPrimes = (limit) => {
+// add the limit
+// loop through to that limit
+// checkPrimes
+//if the number is prime, console.log it
+//if else, don't
+    for (let i = 0; i <= limit; i++) {
+        if (checkPrime(i)) {
+            console.log(i)
+        }
+    }
+}
 
-// const countdown = (num) => {
-//     if(num != 0){
-//         console.log(num);
-//         countdown(num - 1 );
-//     } else {
-//         return
-//     }
-// }
+printPrimes(98)
+
 
 
 // ROCK PAPER SCISSORS
-const userChoice = prompt("Rock, paper or scissors?");
-const computerChoice = Math.random();
-if (computerChoice <0.34){
-    computerChoice = "rock";
-}else if(computerChoice <=0.67){
-    computerChoice = "paper";
-}
-else{
-    computerChoice = "scissors";
-}
-var compare = function(choice1,choice2){
-    if(choice1===choice2){
-        return "The result is a tie!";
-    }
-    if(choice1==="rock"){
-        if(choice2==="scissors"){
-            return "rock wins";
-        }
-        else{
-            return "paper wins";
-        }
-    }
-    if(choice1==="paper"){
-        if(choice2==="rock"){
-            return "paper wins";
-        }
-        else{
-            return "scissors wins";
-        }
-    }
-    if(choice1==="scissors"){
-        if(choice2==="rock"){
-            return "rock wins";
-        }
-        else{
-            return "scissors wins";
-        }
-    }
-};
-compare(userChoice,computerChoice);
+// const userChoice = prompt("Rock, paper or scissors?");
+// const computerChoice = Math.random();
+// if (computerChoice <0.34){
+//     computerChoice = "rock";
+// }else if(computerChoice <=0.67){
+//     computerChoice = "paper";
+// }
+// else{
+//     computerChoice = "scissors";
+// }
+// var compare = function(choice1,choice2){
+//     if(choice1===choice2){
+//         return "The result is a tie!";
+//     }
+//     if(choice1==="rock"){
+//         if(choice2==="scissors"){
+//             return "rock wins";
+//         }
+//         else{
+//             return "paper wins";
+//         }
+//     }
+//     if(choice1==="paper"){
+//         if(choice2==="rock"){
+//             return "paper wins";
+//         }
+//         else{
+//             return "scissors wins";
+//         }
+//     }
+//     if(choice1==="scissors"){
+//         if(choice2==="rock"){
+//             return "rock wins";
+//         }
+//         else{
+//             return "scissors wins";
+//         }
+//     }
+// };
+// compare(userChoice,computerChoice);

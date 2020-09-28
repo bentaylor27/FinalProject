@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lawnmowing Game</title>
+    <script type="text/javascript" src="app.js"></script>
+    <style>
+        h1{
+            text-align: center;
+        }
+        .box{
+            display: inline-block;
+            width: 300px;
+            height: 300px;
+            margin-left: 20px;
+        }
+        #wrapper{
+            width: 1400px;
+            margin: auto;
+            background-image: url("download.jpg");
+            background-repeat: no-repeat;
+            background-size: 1500px 800px;
+        }
+        #money{
+            margin-left: 600px;
+        }
+        button{
+            padding: 10px;
+            background-color: aquamarine;
+            border-radius: 10px;
+        }
+
+        #total{
+            margin-left: 700px;
+            color: red;
+            font-size: 20px;
+        }
+        #tool{
+            color:chartreuse;
+            font-size: 30px;
+            margin-left: 550px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper" >
+    <h1>Fun Mowing the Lawn</h1>
+    <button id="money" onClick="gainMoney ()"> Mow!</button>
+    <button onClick="upgradeTool ()"> Time for an upgrade</button>
+    <p id="total"></p>
+    <p id="memo"></p>
+    <p id="tool"></p>
+    <div class="box">
+        <p>Scissors</p>
+        <img src="scissors.jpg"/>
+        <p>Cost: $5</p>
+    </div>
+    <div class="box">
+        <p>Push Lawnmower</p>
+        <img src="pushlawnmower.jpg" alt="Push Lawnmower">
+        <p>Cost: $25</p>
+    </div>
+    <div class="box">
+        <p>Riding Mower</p>
+        <img src="ridinglawnmower.jpg">
+        <p>Cost: $100</p>
+    </div>
+
+    <div class="box">
+        <p>Starving Students</p>
+        <img src="students.jpg">
+        <p>Cost: $500</p>
+    </div>
+</div>
+</body>
+</html>

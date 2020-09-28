@@ -133,31 +133,60 @@
 
 
 //Palindrome - racecar -->  
-var string="Racecar"
-function checkPalindrome(string){
-    string=string.toLowerCase();
-    for (let i=0; i<string.length; i++){
-        if (string[i] == string[string.length-1-i]){
-            console.log("it checks out")
-        }
-        else{
-            return false
-        }
-    } //for loop bracket
-    return true
+// var string="Racecar"
+// function checkPalindrome(string){
+//     string=string.toLowerCase();
+//     for (let i=0; i<string.length; i++){
+//         if (string[i] == string[string.length-1-i]){
+//             console.log("it checks out")
+//         }
+//         else{
+//             return false
+//         }
+//     } //for loop bracket
+//     return true
+// }
+
+// console.log(checkPalindrome(string));
+
+// //sum array 
+// var array=[1,2,3,4,5,6]
+
+// function sumArray(array){
+//     let sum=0;
+//     for (let i=0; i<array.length; i++){
+//         sum += array[i]
+//     }
+//     return sum
+// }
+
+// console.log(sumArray(array));
+
+
+
+//9/25 Friday lab
+const func1 = ()=>{
+    console.log(1);
+    func2(); //why can I call this now, even though the definition is below?
+    func3();
+    console.log('Finished!');
 }
-
-console.log(checkPalindrome(string));
-
-//sum array 
-var array=[1,2,3,4,5,6]
-
-function sumArray(array){
-    let sum=0;
-    for (let i=0; i<array.length; i++){
-        sum += array[i]
-    }
-    return sum
+const func2 = ()=>{
+    console.log(2);
+    func4();
+    func6();
 }
-
-console.log(sumArray(array));
+const func3 = ()=>{
+    console.log(3);
+    func5();
+}
+const func4 = ()=>{
+    console.log(4);
+}
+const func5 = ()=>{
+    console.log(5);
+}
+const func6 = ()=>{
+    console.log(6);
+}
+func1();
