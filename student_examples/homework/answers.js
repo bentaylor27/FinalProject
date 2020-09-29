@@ -80,23 +80,23 @@
 
 
 //OBJECT-CEPTION
-const inception = {
-    reality: {
-        dreamLayer1: {
-            dreamLayer2: {
-                dreamLayer3: {
-                    dreamLayer4: {
-                        dreamLayer5: {
-                            dreamLayer6: {
-                                limbo: "Joseph Gordon Levitt"
-                           }
-                        }
-                    }
-                }
-            }
-        }
-    }
- }
+// const inception = {
+//     reality: {
+//         dreamLayer1: {
+//             dreamLayer2: {
+//                 dreamLayer3: {
+//                     dreamLayer4: {
+//                         dreamLayer5: {
+//                             dreamLayer6: {
+//                                 limbo: "Joseph Gordon Levitt"
+//                            }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+//  }
 
 // inception.limbo = null 
 //  console.log(inception)
@@ -129,3 +129,33 @@ const bondFilms = [
     { "title" : "A View to a Kill", "year" : 1985, "actor" : "Roger Moore", "gross" : "$321,172,633" },
     { "title" : "License to Kill", "year" : 1989, "actor" : "Timothy Dalton", "gross" : "$285,157,191" }
   ];
+
+
+// let bondTitles = []
+// for (film of bondFilms) {
+//     bondTitles.push(film.title)
+// }
+
+// console.log(bondTitles)
+
+
+// let oddBonds = []
+// for (film of bondFilms) {
+//     if (film.year %2 == 1) {
+//         oddBonds.push(film.title)
+//     }
+// }
+
+// console.log(oddBonds)
+
+
+// bondFilms.gross = "$1,108,561,008"
+// bondFilms.gross = bondFilms.gross.replace("$", "").replace(",", "")
+
+let totalGross = 0
+for (let i = 0; i < bondFilms.length; i++) {
+    let num = (bondFilms[i].gross.replace("$", "").replace(",", "").replace(",", "").replace(",", ""))
+    totalGross += parseInt(num)
+}
+
+console.log(totalGross)
