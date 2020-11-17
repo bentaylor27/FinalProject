@@ -1,62 +1,49 @@
-@import url('https://fonts.googleapis.com/css?family=Comfortaa|Poiret+One');
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+:root {
+  --soft-pink: #EDC7B7;
+  --lightest-pink: #EEE2DC;
+  --warm-violet: #BAB2B5;
+  --dark-imperial-blue: #123C69;
+  --ruby: #AC3B61;
+}
+
+h3 {
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  padding:  1em 0;
+  font-size:2em;
+  color: ghostwhite;
+  margin: 0;
+}
+html {
+  background: var(--lightest-pink);
+}
 
 body {
-    background: #255C7D;
-    font-family: 'Poiret One', cursive;
-    color: black;
-    background: linear-gradient(#f8B195 5%, #f67280 10%, #C06C84 20%, #6C5B7B 30%, #255C7D);
-    margin: 0;
-  }
+  margin: 0;
+}
 
-  nav > h1 {
-      display: inline;
-      font-size: 3em;
-  }
+.meat {
+  background: var(--ruby);
+}
 
-  nav > h3 {
-      display: inline-block;
-      width: 15%;
-      text-align: right;
-      color: ghostwhite;
-  }
+.dairy {
+  background: var(--dark-imperial-blue);
+}
 
-  h1, h2 {
-    font-family: 'Comfortaa', cursive;
-    color: black;
-  }
+.vegetable {
+  background: var(--warm-violet);
+}
 
-  h2, h4 {
-      text-align: center;
-  }
+.fruit {
+  background: var(--soft-pink);
+}
+div {
+  min-height: 100px;
+  background: white;
+}
 
-
-  p {
-      text-align: justify;
-  }
-
-  .half, .third {
-      background: ghostwhite;
-      display: inline-block;
-      width: 49%;
-      box-sizing: border-box;
-      vertical-align: top;
-      padding: 2%;
-      margin-bottom: 16px;
-  }
-
-  .container {
-      width: 90%;
-      margin: auto;
-  }
-
-  .half > img, .third > img {
-      max-width: 50%;
-      float: left;
-      margin-right: 5%;
-  }
-
-  .third {
-      width: 32%;
-      min-height: 280px;
-  }
-
+img{
+  width: 100%;
+}
