@@ -1,6 +1,17 @@
 from flask import Flask
 
 
+# Establish a connection 
+from pymongo import MongoClient
+# Connection to MongoDB cluster
+client = MongoClient('localhost', 8000)
+# cluster = MongoClient('mongodb+srv://bentaylor:<password>@cluster0.7sasy.mongodb.net/<dbname>?retryWrites=true&w=majority')
+db = client.pymongo_test
+
+# post = {'_id': 0, 'item': '1973-06-10: RFK Stadium'}
+# collection.insert_one(post)
+
+
 DEBUG = True
 PORT = 8000
 
