@@ -1,7 +1,10 @@
 from flask import Flask, jsonify, g
 from flask_cors import CORS
-from resources.shows import show
 import pymongo # Import pymongo module
+
+import models
+from resources.shows import show
+
 
 # Establish a connection 
 from pymongo import MongoClient
