@@ -50,7 +50,8 @@ def after_request(response):
     return response
 
 
-CORS(show, origins=['http://localhost:3000'], supports_credentials=True)
+CORS(show, origins=['http://localhost:8000'], supports_credentials=True)
+
 app.register_blueprint(show, url_prefix='/api/v1/shows')
 
 # The default URL ends in / ("my-website.com/").

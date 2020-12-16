@@ -9,8 +9,11 @@
   },
   "devDependencies": {},
   "scripts": {
+    "start": "react-scripts start",
+    "start-flask-api": "cd resources && venv/bin/flask run",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "proxy": "http://127.0.0.1:8000/"
 }

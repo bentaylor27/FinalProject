@@ -12,9 +12,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <h1>Dogs</h1>
-        {/* <DogContainer />
-        <NewDogForm /> */}
+        <h1>Ben's Picks</h1>
       </div>
     )
   }
