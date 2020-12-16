@@ -55,9 +55,13 @@ CORS(show, origins=['http://localhost:8000'], supports_credentials=True)
 app.register_blueprint(show, url_prefix='/api/v1/shows')
 
 # The default URL ends in / ("my-website.com/").
-@app.route('/')
+@app.route('/api', methods=['GET'])
 def index():
-    return 'hello world'
+    return {
+        'date': '1973-03-24',
+        'venue': 'The Spectrum',
+        'location': 'Philadelphia, PA'
+    }
 
 
 # Run the app when the program starts!

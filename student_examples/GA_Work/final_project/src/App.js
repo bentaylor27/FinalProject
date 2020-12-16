@@ -1,19 +1,27 @@
-import React, { Component } from 'react'
-import Axios from 'axios'
+import React, { useState, useEffect } from 'react'
+// import Axios from 'axios' // using fetch instead..?
 // update below with new components
 // import { DogContainer } from './components/DogContainer'
 // import NewDogForm from './components/NewDogForm'
 
-export default class App extends Component {
-  constructor(props) {
-    super(props)
-  }
+function App() {
+  const [initialData, setInitialData] = useState([{}])
 
-  render() {
+  useEffect(() => {
+    fetch('/api').then(
+      response => response.json()
+    ).then(data => setInitialData(data))
+  }, []);
+
     return (
-      <div>
-        <h1>Ben's Picks</h1>
+      <div className='App'>
+        <h1>{initialData.date}</h1>
+        <h2>{initialData.venue}</h2>
+        <h3>{initialData.location}</h3>
       </div>
     )
-  }
 }
+
+export default App;
+
+
