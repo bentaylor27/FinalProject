@@ -153,6 +153,7 @@ body {
     padding-top: 0;
     padding-bottom: 15px;
     text-align: center;
+    size: 200%;
 }
 
 .header-running-text {
@@ -173,7 +174,7 @@ body {
 }
 
 .features-section {
-    background-color: black;
+    background-color: red;
     padding-top: 40px;
     padding-bottom: 80px;
     text-align: center;
@@ -257,6 +258,7 @@ body {
 
 .white-section-text {
     text-align: center;
+    background: white;
 }
 
 .imac {
@@ -512,7 +514,7 @@ ul {
 }
 
 .social-link {
-    margin-right: 15px;
+  justify-content: center;
 }
 
 .strips {
